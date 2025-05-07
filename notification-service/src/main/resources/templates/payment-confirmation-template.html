@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Payment Confirmation</h1>
+        </div>
+        
+        <p>Dear ${customerName},</p>
+        
+        <p>We're pleased to confirm that your payment for order <strong>${orderNumber}</strong> has been successfully processed.</p>
+        
+        <h2>Payment Details</h2>
+        <p><strong>Payment Date:</strong> ${paymentDate}</p>
+        <p><strong>Payment Method:</strong> ${paymentMethod}</p>
+        <p><strong>Amount:</strong> ${amount}</p>
+        <p><strong>Transaction ID:</strong> ${transactionId}</p>
+        
+        <p>Your order is now being prepared for shipment. We'll notify you once it's on the way.</p>
+        
+        <p>Thank you for shopping with us!</p>
+        
+        <p>Sincerely,<br>
+        The E-commerce Team</p>
+        
+        <div class="footer">
+            <p>This is an automated email, please do not reply. For inquiries, contact support@ecommerce.com</p>
+            <p>&copy; 2023 E-commerce Microservices. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
